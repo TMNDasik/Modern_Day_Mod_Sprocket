@@ -89,6 +89,15 @@ Before reporting a problem, make sure that:
 
 If problems appear after updating the mod, it is recommended to completely remove the old version before installing the new one.
 
+Hotbars:
+F11 - mod manager
+G - Smoke
+R - Reload
+E - up key
+Q - down key
+H - TDA
+6 - Fire supression
+
 Found a Bug?
 
 If you encounter a bug in Modern Day Mod, report it in modding discussion and tag:
