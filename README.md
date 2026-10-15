@@ -1,4 +1,4 @@
-Modern Day Mod
+-Modern Day Mod-
 
 Modern Day Mod is a large-scale mod for Sprocket that expands the game with modern systems, weapons, effects, mechanics, and various quality-of-life improvements.
 
