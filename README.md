@@ -121,6 +121,7 @@ Reports such as "it doesn't work" without any description or logs make it much h
 The more detailed the report is, the easier it will be to reproduce and fix the issue.
 
 ---
+The "Modern Day" mod is temporarily incompatible with the "Cold War" mod.
 
 Modern Day Mod is still actively being developed.
 
