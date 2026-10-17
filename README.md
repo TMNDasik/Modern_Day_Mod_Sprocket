@@ -1,4 +1,6 @@
 -Modern Day Mod-
+WARNING!
+If your game crashes while loading the main menu, install the SprocketInteropFix.dll fix into the Sprocket\BepInEx\patchers folder.
 
 Modern Day Mod is a large-scale mod for Sprocket that expands the game with modern systems, weapons, effects, mechanics, and various quality-of-life improvements.
 
