@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>MDModMenu</AssemblyName>
+    <RootNamespace>ModMenu</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <SprocketPlugin>true</SprocketPlugin>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="$(BepInExDir)\core\SemanticVersioning.dll" Private="false" />
+  </ItemGroup>
+
+</Project>

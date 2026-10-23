@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>MDSoundOverhaul</AssemblyName>
+    <RootNamespace>SoundOverhaul</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <SprocketPlugin>true</SprocketPlugin>
+  </PropertyGroup>
+
+  <ItemGroup>
+    
+    <Reference Include="$(BepInExDir)\core\MonoMod.RuntimeDetour.dll" Private="false" />
+  </ItemGroup>
+
+</Project>
+

@@ -1,0 +1,351 @@
+# Sound Overhaul — sound banks.
+# key | volume | files (relative to the sound folder, * and ? allowed; several separated by ;)
+# A bank with several files picks a random one each time. Keys ending in .int are used inside your own vehicle
+# (looking through the sight), .distant / .far — for far-away sounds where the mod supports it.
+# Delete a line (or put # in front) to keep the original sound for it.
+
+# ---------------- Stage 1: weapons ----------------
+
+# Guns 90 mm and up: shot body + long tail outside; inside the vehicle — crew compartment recordings
+gun.large.ext.body  | 1.00 | Weapons/Cannon_large_ext_body_*.wav
+gun.large.ext.tail  | 0.85 | Weapons/Cannon_large_ext_tail_*.wav
+gun.large.int.west  | 1.00 | Weapons/Cannon_int_abrams_*.wav
+gun.large.int.east  | 1.00 | Weapons/Cannon_int_t72_*.wav
+# Guns 40-89 mm
+gun.med.ext.body    | 1.00 | Weapons/Cannon_med_ext_body_*.wav
+gun.med.ext.tail    | 0.85 | Weapons/Cannon_med_ext_tail_*.wav
+
+# Autocannons: 16-22 mm MK 20, 23-27 mm M242, 28-39 mm 2A42 (a shot per round, the tail after the burst)
+ac.mk20.ext         | 0.90 | Weapons/wpn_mk20_shot_ext_*.wav
+ac.mk20.ext.tail    | 0.80 | Weapons/wpn_mk20_tail_sml_ext_*.wav
+ac.mk20.int         | 0.90 | Weapons/wpn_mk20_shot_int_*.wav
+ac.m242.ext         | 1.00 | Weapons/m242_ext_body_*.wav
+ac.m242.ext.tail    | 0.80 | Weapons/m242_ext_tail_*.wav
+ac.m242.int         | 1.00 | Weapons/m242_int_?.wav
+ac.m242.int.end     | 1.00 | Weapons/m242_int_500rpm_end.wav
+ac.2a42.ext         | 1.00 | Weapons/2a42_ext_body_*.wav
+ac.2a42.ext.tail    | 0.80 | Weapons/2a42_ext_tail_*.wav
+ac.2a42.int         | 1.00 | Weapons/2a42_int_?.wav
+ac.int.end          | 1.00 | Weapons/2a42_int_600rpm_end.wav
+
+# Machine guns under 10 mm: single shots, burst loops (PKT / M240), burst ends
+mg.single.ext       | 0.90 | Weapons/wpn_mg3_muzzle_ext_*.wav
+mg.single.int       | 0.90 | Weapons/wpn_mg3_muzzle_int_*.wav
+mg.pkt.ext          | 0.90 | Weapons/wpn_pkt_ext_loop.wav
+mg.pkt.ext.tail     | 0.80 | Weapons/wpn_pkt_ext_tail.wav
+mg.pkt.int          | 0.90 | Weapons/wpn_pkt_int_loop.wav
+mg.pkt.int.end      | 0.90 | Weapons/wpn_pkt_int_end.wav
+mg.m240.ext         | 0.90 | Weapons/wpn_m240_ext_loop.wav
+mg.m240.ext.tail    | 0.80 | Weapons/wpn_m240_ext_tail.wav
+mg.m240.int         | 0.90 | Weapons/wpn_m240_int_loop.wav
+mg.m240.int.end     | 0.90 | Weapons/wpn_m240_int_end.wav
+
+# Heavy machine guns 10-15 mm (M2, DShK, NSVT, M85; KPVT from 14 mm)
+hmg.m2.ext          | 0.95 | Weapons/wpn_m2_ext_loop.wav
+hmg.m2.ext.tail     | 0.85 | Weapons/wpn_m2_ext_tail.wav
+hmg.m2.int          | 0.95 | Weapons/wpn_m2_int_loop.wav
+hmg.m2.int.end      | 0.95 | Weapons/wpn_m2_int_end.wav
+hmg.dshk.ext        | 0.95 | Weapons/wpn_dshk_ext_loop.wav
+hmg.dshk.int        | 0.95 | Weapons/wpn_dshk_int_loop.wav
+hmg.dshk.int.end    | 0.95 | Weapons/wpn_dshk_int_end.wav
+hmg.nsvt.ext        | 0.95 | Weapons/wpn_nsvt_ext_loop.wav
+hmg.nsvt.int        | 0.95 | Weapons/wpn_nsvt_int_loop.wav
+hmg.nsvt.int.end    | 0.95 | Weapons/wpn_nsvt_int_end.wav
+hmg.m85.ext         | 0.95 | Weapons/wpn_m85_ext_loop.wav
+hmg.m85.ext.tail    | 0.85 | Weapons/wpn_m85_ext_tail.wav
+hmg.m85.int         | 0.95 | Weapons/wpn_m85_int_loop.wav
+hmg.m85.int.end     | 0.95 | Weapons/wpn_m85_int_end.wav
+hmg.kpvt.ext        | 1.00 | Weapons/wpn_kpvt_ext_loop.wav
+hmg.kpvt.ext.tail   | 0.90 | Weapons/wpn_kpvt_ext_tail.wav
+hmg.kpvt.int        | 1.00 | Weapons/wpn_kpvt_int_loop.wav
+hmg.kpvt.int.end    | 1.00 | Weapons/wpn_kpvt_int_end.wav
+
+# Loading by the loader (the game has no loading sounds): breech, ammo rack door, shell insertion
+load.breech.open    | 0.90 | Weapons/breech_open.wav
+load.breech.close   | 1.00 | Weapons/breech_close.wav; Vehicle/Breech close 2.wav; Vehicle/Breech closing.wav
+load.shell.insert   | 1.00 | Weapons/shell_insert.wav
+load.rack.open      | 0.70 | Vehicle/ammo door open.wav
+load.rack.close     | 0.70 | Vehicle/ammo door close.wav
+
+# Spent cases falling out of the ejection port (Munitions)
+casing.drop         | 0.80 | Weapons/casings_largeShell_*.wav
+
+# Autoloader AZ / mechanized loader MZ (Munitions): start, loop in, loop, rattle, loop out, shell ramming
+az.start            | 1.00 | Effects/az_start.wav
+az.start.int        | 1.00 | Effects/az_start_interior.wav
+az.in               | 1.00 | Effects/az_loop_in.wav
+az.in.int           | 1.00 | Effects/az_loop_in_interior.wav
+az.loop             | 1.00 | Effects/az_loop.wav
+az.loop.int         | 1.00 | Effects/az_loop_interior.wav
+az.rattle           | 0.80 | Effects/az_loop_rattle.wav
+az.out              | 1.00 | Effects/az_loop_out.wav
+az.out.int          | 1.00 | Effects/az_loop_out_interior.wav
+az.shell            | 1.00 | Effects/az_shell.wav
+az.shell.int        | 1.00 | Effects/az_shell_interior.wav
+mz.start            | 1.00 | Effects/mz_start.wav
+mz.start.int        | 1.00 | Effects/mz_start_interior.wav
+mz.in               | 1.00 | Effects/mz_loop_in.wav
+mz.in.int           | 1.00 | Effects/mz_loop_in_interior.wav
+mz.loop             | 1.00 | Effects/mz_loop.wav
+mz.loop.int         | 1.00 | Effects/mz_loop_interior.wav
+mz.rattle           | 0.80 | Effects/mz_loop_rattle.wav
+mz.out              | 1.00 | Effects/mz_loop_out.wav
+mz.out.int          | 1.00 | Effects/mz_loop_out_interior.wav
+mz.shell            | 1.00 | Effects/mz_shell.wav
+mz.shell.int        | 1.00 | Effects/mz_shell_interior.wav
+
+# ATGM launcher tube (Munitions): wire-guided = TOW, wireless = 9K111; pre-launch, launch, motor in flight
+atgm.wire.pre       | 1.00 | Unity/sharedassets1/TOW_pre_*.wav
+atgm.wire.fire      | 1.00 | Weapons/TOW_fire_*.wav
+atgm.beam.pre       | 1.00 | Unity/sharedassets1/9k111_pre.wav
+atgm.beam.fire      | 1.00 | Weapons/9k111_fire_*.wav
+atgm.flight         | 0.80 | Unity/resources/TOW rocket loop.wav
+# Gun-launched ATGM
+atgm.gun.fire       | 1.00 | Weapons/9M14_fire_*.wav
+
+# Unguided rocket launcher tube (Munitions): rocket pod launch
+rocket.fire         | 1.00 | Weapons/Rocket_Pod_Close_*.wav
+rocket.fire.distant | 1.00 | Weapons/Rocket_Pod_Distant_*.wav
+rocket.fire.far     | 1.00 | Weapons/Rocket_Pod_Far_*.wav
+
+# Small launchers: APS charges and aerosol smoke grenades (ActiveProtection)
+gl.launch           | 0.90 | Weapons/S_GL_close_*.wav
+gl.launch.distant   | 0.90 | Weapons/S_GL_distant_*.wav
+gl.launch.far       | 0.90 | Weapons/S_GL_far_*.wav
+gl.launch.int       | 0.90 | Weapons/S_GL_int_*.wav
+# Explosive reactive armour tile going off (ActiveProtection ERA Block)
+era.burst           | 0.85 | Explosions/S_HE_close_*.wav
+era.burst.distant   | 0.85 | Explosions/S_HE_distant_*.wav
+era.burst.far       | 0.85 | Explosions/S_HE_far_*.wav
+# Ammo cooking off and venting through blow-off panels (ActiveProtection Blow-off Panel): the blast, the roaring jet,
+# the steady fire after it, flare-ups, the panel landing
+vent.blast          | 1.00 | Vehicle/Sound_VERTICAL_VEHICLES_SHARED_COOKOFF_Larger Shells Bang_05.wav;Vehicle/Sound_VERTICAL_VEHICLES_SHARED_COOKOFF_Larger Shells Bang_06.wav;Vehicle/Sound_VERTICAL_VEHICLES_SHARED_COOKOFF_Larger Shells Bang_07.wav
+vent.jet            | 1.00 | Vehicle/Sound_VERTICAL_VEHICLES_SHARED_BURNINGFlame Jet_Master.wav
+vent.burn           | 0.90 | Vehicle/Sound_VERTICAL_VEHICLES_SHARED_BURNINGFlame Intense_Master.wav
+vent.flare          | 0.80 | Vehicle/Sound_VERTICAL_VEHICLES_SHARED_BURNINGFlame Bursts Mellow_0?_Master.wav
+vent.land           | 0.70 | Vehicle/Sound_VERTICAL_VEHICLES_SHARED_BURNINGMetal Scrapes_0?_Master.wav
+
+# ---------------- Stage 2: diesel engines, tracks, turret and gun drives ----------------
+# Engines: stages 00 (idle) / 33 (low) / 66 (mid) / 99 (high); .on = outside under load, .off = outside without load, .int = inside.
+# The gas turbine (Powertrain mod) keeps its own sound.
+
+# T-72A
+eng.t72.00.on       | 1.00 | Vehicle/S_T72_rpm00_rear.wav
+eng.t72.00.int      | 1.00 | Vehicle/S_T72_rpm00_int.wav
+eng.t72.33.on       | 1.00 | Vehicle/S_T72_rpm33_onload_rear.wav
+eng.t72.33.off      | 1.00 | Vehicle/S_T72_rpm33_offload.wav
+eng.t72.33.int      | 1.00 | Vehicle/S_T72_rpm33_onload_int.wav
+eng.t72.66.on       | 1.00 | Vehicle/S_T72_rpm66_onload_rear.wav
+eng.t72.66.off      | 1.00 | Vehicle/S_T72_rpm66_offload.wav
+eng.t72.66.int      | 1.00 | Vehicle/S_T72_rpm66_onload_int.wav
+eng.t72.99.on       | 1.00 | Vehicle/S_T72_rpm99_onload_rear.wav
+eng.t72.99.off      | 1.00 | Vehicle/S_T72_rpm99_offload.wav
+eng.t72.99.int      | 1.00 | Vehicle/S_T72_rpm99_onload_int.wav
+# T-64
+eng.t64.00.off      | 1.00 | Vehicle/S_T64_rpm00_offload.wav
+eng.t64.00.int      | 1.00 | Vehicle/S_T64_rpm00_int.wav
+eng.t64.33.on       | 1.00 | Vehicle/S_T64_rpm33_onload.wav
+eng.t64.33.off      | 1.00 | Vehicle/S_T64_rpm33_offload.wav
+eng.t64.33.int      | 1.00 | Vehicle/S_T64_rpm33_int.wav
+eng.t64.66.on       | 1.00 | Vehicle/S_T64_rpm66_onload.wav
+eng.t64.66.off      | 1.00 | Vehicle/S_T64_rpm66_offload.wav
+eng.t64.66.int      | 1.00 | Vehicle/S_T64_rpm66_int.wav
+eng.t64.99.on       | 1.00 | Vehicle/S_T64_rpm99_onload.wav
+eng.t64.99.off      | 1.00 | Vehicle/S_T64_rpm99_offload.wav
+eng.t64.99.int      | 1.00 | Vehicle/S_T64_rpm99_int.wav
+# Leopard 1 / 2
+eng.leo.00.on       | 1.00 | Vehicle/S_Leo1_rpm00_onload.wav
+eng.leo.00.off      | 1.00 | Vehicle/S_Leo1_rpm00_offload.wav
+eng.leo.00.int      | 1.00 | Vehicle/S_Leo1_rpm00_onload_int*.wav
+eng.leo.33.on       | 1.00 | Vehicle/S_Leo1_rpm33_onload.wav
+eng.leo.33.int      | 1.00 | Vehicle/S_Leo1_rpm33_onload_int*.wav
+eng.leo.66.on       | 1.00 | Vehicle/S_Leo1_rpm66_onload.wav
+eng.leo.66.off      | 1.00 | Vehicle/S_Leo1_rpm66_offload.wav
+eng.leo.66.int      | 1.00 | Vehicle/S_Leo1_rpm66_onload_int*.wav
+eng.leo.99.on       | 1.00 | Vehicle/S_Leo1_rpm99_onload.wav
+eng.leo.99.int      | 1.00 | Vehicle/S_Leo1_rpm99_onload_int*.wav
+# T-55A
+eng.t55.00.on       | 1.00 | Vehicle/ext_idle__00377.wav
+eng.t55.33.on       | 1.00 | Vehicle/ext_low__00151.wav
+eng.t55.66.on       | 1.00 | Vehicle/ext_mid__00263.wav
+eng.t55.99.on       | 1.00 | Vehicle/ext_high.wav
+eng.t55.00.int      | 1.00 | Vehicle/int_idle__00448.wav
+eng.t55.33.int      | 1.00 | Vehicle/int_low__00077.wav
+eng.t55.66.int      | 1.00 | Vehicle/int_mid.wav
+eng.t55.99.int      | 1.00 | Vehicle/int_high__00231.wav
+# M60A3
+eng.m60.00.on       | 1.00 | Vehicle/ext_idle__00436.wav
+eng.m60.33.on       | 1.00 | Vehicle/ext_low.wav
+eng.m60.66.on       | 1.00 | Vehicle/ext_mid__00379.wav
+eng.m60.99.on       | 1.00 | Vehicle/ext_high__00307.wav
+eng.m60.00.int      | 1.00 | Vehicle/int_idle__00303.wav
+eng.m60.33.int      | 1.00 | Vehicle/int_low__00178.wav
+eng.m60.66.int      | 1.00 | Vehicle/int_mid__00388.wav
+eng.m60.99.int      | 1.00 | Vehicle/int_high__00395.wav
+# BMP-1
+eng.bmp1.00.on      | 1.00 | Vehicle/ext_idle__00229.wav
+eng.bmp1.33.on      | 1.00 | Vehicle/ext_low__00063.wav
+eng.bmp1.66.on      | 1.00 | Vehicle/ext_mid__00423.wav
+eng.bmp1.99.on      | 1.00 | Vehicle/ext_high__00323.wav
+eng.bmp1.00.int     | 1.00 | Vehicle/int_idle__00399.wav
+eng.bmp1.33.int     | 1.00 | Vehicle/int_low__00092.wav
+eng.bmp1.66.int     | 1.00 | Vehicle/int_mid__00160.wav
+eng.bmp1.99.int     | 1.00 | Vehicle/int_high.wav
+# M2 Bradley
+eng.m2.00.on        | 1.00 | Vehicle/ext_idle__00412.wav
+eng.m2.33.on        | 1.00 | Vehicle/ext_low__00369.wav
+eng.m2.66.on        | 1.00 | Vehicle/ext_mid__00181.wav
+eng.m2.99.on        | 1.00 | Vehicle/ext_high__00193.wav
+eng.m2.00.int       | 1.00 | Vehicle/int_idle.wav
+eng.m2.33.int       | 1.00 | Vehicle/int_low__00209.wav
+eng.m2.66.int       | 1.00 | Vehicle/int_mid__00121.wav
+eng.m2.99.int       | 1.00 | Vehicle/int_high__00343.wav
+# M113
+eng.m113.00.on      | 1.00 | Vehicle/ext_idle__00258.wav
+eng.m113.33.on      | 1.00 | Vehicle/ext_low__00131.wav
+eng.m113.66.on      | 1.00 | Vehicle/ext_mid__00344.wav
+eng.m113.99.on      | 1.00 | Vehicle/ext_high__00243.wav
+eng.m113.00.int     | 1.00 | Vehicle/int_idle__00435.wav
+eng.m113.33.int     | 1.00 | Vehicle/int_low__00425.wav
+eng.m113.66.int     | 1.00 | Vehicle/int_mid__00268.wav
+eng.m113.99.int     | 1.00 | Vehicle/int_high__00445.wav
+# Marder
+eng.marder.00.on    | 1.00 | Vehicle/veh_marder_engine_ext_00.wav
+eng.marder.33.on    | 1.00 | Vehicle/veh_marder_engine_ext_33.wav
+eng.marder.66.on    | 1.00 | Vehicle/veh_marder_engine_ext_66.wav
+eng.marder.99.on    | 1.00 | Vehicle/veh_marder_engine_ext_99.wav
+eng.marder.00.int   | 1.00 | Vehicle/veh_marder_engine_int_00.wav
+eng.marder.33.int   | 1.00 | Vehicle/veh_marder_engine_int_33.wav
+eng.marder.66.int   | 1.00 | Vehicle/veh_marder_engine_int_66.wav
+eng.marder.99.int   | 1.00 | Vehicle/veh_marder_engine_int_99.wav
+# BRDM-2
+eng.brdm.00.on      | 1.00 | Vehicle/ext_idle.wav
+eng.brdm.33.on      | 1.00 | Vehicle/ext_low__00149.wav
+eng.brdm.66.on      | 1.00 | Vehicle/ext_mid.wav
+eng.brdm.99.on      | 1.00 | Vehicle/ext_high__00259.wav
+eng.brdm.00.int     | 1.00 | Vehicle/int_idle__00311.wav
+eng.brdm.33.int     | 1.00 | Vehicle/int_low.wav
+eng.brdm.66.int     | 1.00 | Vehicle/int_mid__00234.wav
+eng.brdm.99.int     | 1.00 | Vehicle/int_high__00246.wav
+# M923 truck
+eng.m923.00.on      | 1.00 | Vehicle/M923_ext_idle.wav
+eng.m923.33.on      | 1.00 | Vehicle/M923_ext_low.wav
+eng.m923.66.on      | 1.00 | Vehicle/M923_ext_mid.wav
+eng.m923.99.on      | 1.00 | Vehicle/M923_ext_high.wav
+eng.m923.00.int     | 1.00 | Vehicle/M923_int_idle.wav
+eng.m923.33.int     | 1.00 | Vehicle/M923_int_low.wav
+eng.m923.66.int     | 1.00 | Vehicle/M923_int_mid.wav
+eng.m923.99.int     | 1.00 | Vehicle/M923_int_high.wav
+# Start, shutdown, turbocharger whistle (all diesels)
+eng.start           | 1.00 | Unity/resources/EngineStart.wav
+eng.stop            | 1.00 | Unity/resources/EngineStop.wav
+eng.turbo           | 0.60 | Unity/resources/TurboWhistle.wav
+
+# Tracks: heavy (30 t and more) / medium (14-30 t) / light; stages 33 / 66 / 99 = about 9 / 22 / 40 km/h
+trk.heavy.33        | 1.00 | Vehicle/veh_track_heavy_loop33.wav
+trk.heavy.66        | 1.00 | Vehicle/veh_track_heavy_loop66.wav
+trk.heavy.99        | 1.00 | Vehicle/veh_track_heavy_loop99.wav
+trk.med.33          | 1.00 | Vehicle/veh_track_med_33.wav
+trk.med.66          | 1.00 | Vehicle/veh_track_med_66.wav
+trk.med.99          | 1.00 | Vehicle/veh_track_med_99.wav
+trk.light.33        | 1.00 | Vehicle/veh_track_light_loop33.wav
+trk.light.66        | 1.00 | Vehicle/veh_track_light_loop66.wav
+trk.light.99        | 1.00 | Vehicle/veh_track_light_loop99.wav
+trk.squeak          | 0.80 | Vehicle/veh_track_squeak_loop.wav
+# Inside your own vehicle while driving: hull rattle and rumble
+veh.int.rattle      | 0.80 | Vehicle/veh_shared_turbulence_rattle_high.wav; Vehicle/veh_shared_turbulence_interior_misc.wav
+veh.int.rumble      | 0.90 | Vehicle/veh_shared_turbulence_deep_rattle.wav
+
+# Turret traverse: main battle tank (30 t and more) / lighter vehicles (BMP-1 drive)
+tur.mbt.motor       | 1.00 | Vehicle/veh_shared_turret_mbt_motor.wav
+tur.teeth           | 0.70 | Vehicle/veh_shared_turret_teeth_loop.wav
+tur.mbt.release     | 0.90 | Vehicle/veh_shared_turret_mbt_release_*.wav
+tur.mbt.brake       | 0.90 | Vehicle/veh_shared_turret_mbt_brake_med_*.wav
+tur.mbt.brake.heavy | 0.90 | Vehicle/veh_shared_turret_mbt_brake_heavy_*.wav
+tur.ifv.lo          | 1.00 | Vehicle/veh_shared_turret_bmp1_lo.wav
+tur.ifv.hi          | 1.00 | Vehicle/veh_shared_turret_bmp1_hi.wav
+tur.ifv.release     | 0.90 | Vehicle/veh_shared_turret_bmp1_release_*.wav
+tur.ifv.brake       | 0.90 | Vehicle/veh_shared_turret_bmp1_brake_*.wav
+# Gun elevation drive (hydraulic)
+drv.loop            | 0.80 | Vehicle/veh_shared_turret_hydraulic_engine_loop.wav
+drv.release         | 0.80 | Vehicle/veh_shared_turret_hydraulic_brake_release_*.wav
+
+# ---------------- Stage 3: hits, explosions, fire, destruction ----------------
+# Hits on armour: bullets (under 15 mm), autocannon rounds (15-45 mm), shells. .int = your own vehicle hit, heard inside (in the sight)
+hit.bullet          | 0.70 | Impacts/proj_impact_bullet_metal_*.wav;Impacts/Sound_Sx_Projectile_Impacts_Small_PingAlt_Layer_*.wav
+hit.bullet.int      | 0.70 | Impacts/Sound_Sx_Projectile_Impacts_Small_SmackAlt_Layer_*.wav;Impacts/Sound_Sx_Projectile_Impact_Small_Smack_Layer_*.wav
+hit.ac              | 0.85 | Impacts/Sound_Sx_Projectile_Impacts_Autocannon_Armor_Thick_Main_Layer_Ext_*.wav
+hit.ac.tonal        | 0.60 | Impacts/Sound_Sx_Projectile_Impacts_Autocannon_Armor_Thick_Tonal_Layer_*.wav
+hit.ac.int          | 0.80 | Impacts/Sound_Sx_Projectiles_Penetration_Interior_Perspective_Metal_Sweeteners_Alt_*.wav
+hit.shell           | 1.00 | Impacts/Sound_Sx_Projectile_Impacts_IOLCPOTA_Ext_*.wav
+hit.shell.tonal     | 0.75 | Impacts/Sound_Sx_Projectile_Impacts_Iolcpota_Tonal_*.wav
+hit.shell.int       | 1.00 | Impacts/Sound_Sx_Projectiles_Penetration_Interior_Perspective_Metal_Sweeteners_0?.wav
+hit.debris          | 0.60 | Impacts/Sound_Sx_Project_Impacts_Iolcpota_Debris_Metal_*.wav
+# Penetration of your own vehicle, inside: impact, tearing metal, ringing (layers played together), and the bell for big guns
+hit.pen.int         | 1.00 | Impacts/Sound_Sx_Projectile_Penetration_Interior_Perspective_Layer_A_*.wav
+hit.pen.int.tear    | 0.90 | Impacts/Sound_Sx_Projectile_Penetration_Interior_Perspective_Layer_B_*.wav;Impacts/Sound_Sx_Projectile_Penetration_Interior_Perspective_Layer_C_*.wav
+hit.pen.int.ring    | 0.80 | Impacts/Sound_Sx_Projectiles_Penetration_Interior_Perspective_Layer_D_*.wav
+hit.pen.bell        | 0.50 | Impacts/Sound_Sx_Projectiles_Penetration_Bell_Indicator_*.wav
+hit.ricochet        | 0.80 | Impacts/S_bullet_ricochet_?.wav;Impacts/S_bullet_ricochet_1?.wav
+hit.ricochet.distant| 0.80 | Impacts/S_bullet_ricochet_distant_*.wav
+# Rounds hitting the ground (no explosion)
+hit.ground.small    | 0.55 | Impacts/proj_impact_bullet_grass_*.wav;Impacts/proj_impact_bullet_gravel_*.wav
+hit.ground          | 0.80 | Impacts/impact_dirt_*.wav;Vehicle/impact_rock_transient_sml_*.wav
+hit.ground.large    | 0.85 | Impacts/Sound_Sx_Projectile_Impacts_Iolcpota_Debris_Rocky_*.wav
+
+# Explosions: autocannon HE (under 45 mm), HE shells, big HE (100 mm and more), HEAT shells and missile warheads
+# (Munitions types), landmines, exploding vehicles; falling earth and debris after big ones
+expl.small          | 0.90 | Explosions/S_30mm explosive_?.wav;Explosions/S_30mm explosive_1?.wav
+expl.small.distant  | 0.90 | Explosions/S_30mm explosive_distant_*.wav
+expl.small.far      | 0.90 | Explosions/S_30mm explosive_far_*.wav
+expl.he             | 1.00 | Explosions/S_HE_close_*.wav
+expl.he.distant     | 1.00 | Explosions/S_HE_distant_*.wav
+expl.he.far         | 1.00 | Explosions/S_HE_far_*.wav
+expl.large          | 1.00 | Explosions/S_Artillery_close_*.wav
+expl.large.distant  | 1.00 | Explosions/S_Artillery_distant_*.wav
+expl.large.far      | 1.00 | Explosions/S_Artillery_far_*.wav
+expl.heat           | 1.00 | Explosions/S_HEAT_close_*.wav
+expl.heat.distant   | 1.00 | Explosions/S_HEAT_distant_*.wav
+expl.heat.far       | 1.00 | Explosions/S_HEAT_far_*.wav
+expl.missile        | 1.00 | Explosions/S_Missile_close_*.wav
+expl.missile.distant| 1.00 | Explosions/S_Missile_distant_*.wav
+expl.missile.far    | 1.00 | Explosions/S_Missile_far_*.wav
+expl.rocket         | 1.00 | Explosions/S_Rocket_close_*.wav
+expl.rocket.distant | 1.00 | Explosions/S_Rocket_distant_*.wav
+expl.rocket.far     | 1.00 | Explosions/S_Rocket_far_*.wav
+expl.mine           | 1.00 | Explosions/S_Mortar_close_*.wav
+expl.mine.distant   | 1.00 | Explosions/S_Mortar_distant_*.wav
+expl.mine.far       | 1.00 | Explosions/S_Mortar_far_*.wav
+expl.vehicle        | 1.00 | Vehicle/Sound_VERTICAL_VEHICLES_SHARED_COOKOFF_Larger Shells Bang_05.wav;Vehicle/Sound_VERTICAL_VEHICLES_SHARED_COOKOFF_Larger Shells Bang_06.wav;Vehicle/Sound_VERTICAL_VEHICLES_SHARED_COOKOFF_Larger Shells Bang_07.wav
+expl.vehicle.debris | 0.80 | Explosions/S_Debris_vehicle_*.wav
+expl.debris.small   | 0.70 | Explosions/S_Debris_ground_tiny_*.wav
+expl.debris.medium  | 0.70 | Explosions/S_Debris_ground_small_*.wav
+
+# Fire: burning vehicles and flame jets from hatches when ammo cooks off (mixed by the fire's strength), flare-ups
+fire.jet            | 0.90 | Vehicle/Sound_VERTICAL_VEHICLES_SHARED_BURNINGFlame Jet_Master.wav
+fire.big            | 0.85 | Vehicle/Sound_VERTICAL_VEHICLES_SHARED_BURNINGFlame Intense_Master.wav
+fire.small          | 0.80 | Vehicle/Sound_VERTICAL_VEHICLES_SHARED_BURNINGMellow Flames_Master.wav;Vehicle/Sound_VERTICAL_VEHICLES_SHARED_BURNINGCrackles_Master.wav
+fire.flare          | 0.75 | Vehicle/Sound_VERTICAL_VEHICLES_SHARED_BURNINGFlame Bursts Mellow_0?_Master.wav;Vehicle/Sound_VERTICAL_VEHICLES_SHARED_BURNINGFlame Movement Intense 01_Master.wav
+
+# Destroyed engine; turrets and parts blown off (tearing off, hitting the ground)
+destroy.engine      | 0.90 | Vehicle/impact_chassis_stress_*.wav
+destroy.engine.bang | 0.80 | Vehicle/Sound_VERTICAL_VEHICLES_SHARED_COOKOFF_Larger Shells Bang_01.wav;Vehicle/Sound_VERTICAL_VEHICLES_SHARED_COOKOFF_Larger Shells Bang_02.wav;Vehicle/Sound_VERTICAL_VEHICLES_SHARED_COOKOFF_Larger Shells Bang_03.wav;Vehicle/Sound_VERTICAL_VEHICLES_SHARED_COOKOFF_Larger Shells Bang_04.wav
+debris.detach       | 0.95 | Impacts/impact_detach_mid_lrg_*.wav
+debris.detach.small | 0.90 | Impacts/impact_detach_mid_sml_*.wav
+debris.land         | 1.00 | Vehicle/impact_chassis_mid_*.wav;Vehicle/impact_chassis_high_*.wav;Vehicle/impact_metal_impact_?.wav
+debris.land.small   | 0.85 | Vehicle/impact_metal_impact_light_*.wav;Vehicle/impact_chassis_low_*.wav
+
+# Trees: trunk cracking (big / small trees), leaves, the tree hitting the ground
+tree.crack          | 0.85 | Impacts/impact_tree_fall_crack_short_*.wav;Impacts/impact_tree_fall_crack_strong*.wav;Impacts/impact_tree_fall_start_*.wav
+tree.crack.light    | 0.75 | Impacts/WoodSplit*.wav;Vehicle/impact_tree_trunk_*.wav;Vehicle/impact_tree_bark_*.wav
+tree.leaves         | 0.70 | Vehicle/impact_tree_leaves_*.wav;Vehicle/impact_tree_shake_sml_*.wav;Vehicle/impact_tree_shake_lrg*.wav
+tree.fall           | 0.90 | Impacts/impact_tree_fall_end_*.wav
+tree.fall.bass      | 0.80 | Impacts/impact_tree_fall_land_bass*.wav
+
+# Our mods: APS protective charge bursting at the threat (ActiveProtection), aerosol (smoke) grenade bursting (KOEP)
+aps.burst           | 1.00 | Explosions/S_Rocket_close_*.wav
+aps.burst.distant   | 1.00 | Explosions/S_Rocket_distant_*.wav
+aps.burst.far       | 1.00 | Explosions/S_Rocket_far_*.wav
+smoke.burst         | 0.90 | Explosions/S_Smoke_close_*.wav
+smoke.burst.distant | 0.90 | Explosions/S_Smoke_distant_*.wav
+smoke.burst.far     | 0.90 | Explosions/S_Smoke_far_*.wav

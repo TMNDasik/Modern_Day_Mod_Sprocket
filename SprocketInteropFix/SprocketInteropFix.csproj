@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>SprocketInteropFix</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+
+    
+    <SprocketDir Condition="'$(SprocketDir)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Sprocket</SprocketDir>
+    <BepInExCore>$(SprocketDir)\BepInEx\core</BepInExCore>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx.Core" HintPath="$(BepInExCore)\BepInEx.Core.dll" Private="false" />
+
+    <Reference Include="BepInEx.Preloader.Core" HintPath="$(BepInExCore)\BepInEx.Preloader.Core.dll" Private="false" />
+
+    <Reference Include="0Harmony" HintPath="$(BepInExCore)\0Harmony.dll" Private="false" />
+
+    <Reference Include="Il2CppInterop.Runtime" HintPath="$(BepInExCore)\Il2CppInterop.Runtime.dll" Private="false" />
+  </ItemGroup>
+
+  
+  <Target Name="CopyToGame" AfterTargets="Build" Condition="Exists('$(SprocketDir)\BepInEx\patchers')">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(SprocketDir)\BepInEx\patchers" />
+  </Target>
+
+</Project>
