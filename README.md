@@ -1,7 +1,11 @@
 
--Modern Day Mod-
+
+<img width="2170" height="725" alt="file_0000000070ac824396957100a0ea30f7" src="https://github.com/user-attachments/assets/15f5133e-c0b9-4a82-b09f-0fc32b96eca7" />
+
+
 
 WARNING!
+
 If your game crashes while loading the main menu, install the SprocketInteropFix.dll fix into the Sprocket\BepInEx\patchers folder.
 
 Modern Day Mod is a large-scale mod for Sprocket that expands the game with modern systems, weapons, effects, mechanics, and various quality-of-life improvements.
@@ -37,6 +41,8 @@ Some features are currently being reworked and have been temporarily removed:
 - Gun stabilizer
 
 They may return in future updates in an improved form.
+
+<img width="602,5" height="653" alt="photo_2026-10-27_21-32-04" src="https://github.com/user-attachments/assets/38312c41-0d80-407f-acee-629da19647ce" />
 
 Installation
 
@@ -104,7 +110,7 @@ H - TDA
 
 Found a Bug?
 
-If you encounter a bug in Modern Day Mod, report it in modding discussion and tag:
+If you encounter a bug in Modern Day Mod, report it in modding discussion in offical discord of sprocket and tag:
 
 @TMNDas1
 
@@ -130,3 +136,6 @@ The "Modern Day" mod is temporarily incompatible with the "Cold War" mod.
 Modern Day Mod is still actively being developed.
 
 New systems, weapons, effects, mechanics, and other features will be added in future updates.
+<img width="960" height="540" alt="photo_2026-10-26_21-28-12" src="https://github.com/user-attachments/assets/41a72378-ae8a-4b35-bb2d-f9bdf45f744d" />
+<img width="960" height="540" alt="photo_2026-10-26_21-28-10" src="https://github.com/user-attachments/assets/a097e2bb-b1e5-4ed6-85da-169121b7ef91" />
+<img width="960" height="540" alt="photo_2026-10-26_21-28-11" src="https://github.com/user-attachments/assets/a1f0b965-46a9-4f8b-a315-db9e3a79fcf5" />
