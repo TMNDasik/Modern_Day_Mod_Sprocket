@@ -1,141 +1,267 @@
+<p align="center">
+  <img width="100%" alt="Modern Day Mod banner" src="https://github.com/user-attachments/assets/15f5133e-c0b9-4a82-b09f-0fc32b96eca7" />
+</p>
 
+<h1 align="center">Modern Day Mod</h1>
 
-<img width="2170" height="725" alt="file_0000000070ac824396957100a0ea30f7" src="https://github.com/user-attachments/assets/15f5133e-c0b9-4a82-b09f-0fc32b96eca7" />
+<p align="center">
+  <b>A large-scale modern warfare expansion for Sprocket.</b><br>
+  Modern weapons, protection systems, ammunition, powertrains, effects, mechanics and more.
+</p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Game-Sprocket-2f3136" alt="Sprocket">
+  <img src="https://img.shields.io/badge/Loader-BepInEx-5b5bd6" alt="BepInEx">
+  <img src="https://img.shields.io/badge/Status-Active%20Development-orange" alt="Active Development">
+</p>
 
+---
 
-WARNING!
+## About
 
-If your game crashes while loading the main menu, install the SprocketInteropFix.dll fix into the Sprocket\BepInEx\patchers folder.
+**Modern Day Mod** is a large-scale gameplay expansion for **Sprocket** focused on modern armored warfare.
 
-Modern Day Mod is a large-scale mod for Sprocket that expands the game with modern systems, weapons, effects, mechanics, and various quality-of-life improvements.
+It expands the game with modern vehicle systems, weapons, ammunition, protection technologies, powertrain mechanics, visual effects, sounds and quality-of-life improvements.
 
-The mod is mainly focused on modern armored vehicles and gives you much more freedom when designing vehicles and using them in combat.
+The goal is to give builders more freedom when creating modern armored vehicles while adding more depth to how those vehicles behave and fight in combat.
 
-Features
+> [!IMPORTANT]
+> Modern Day Mod is under active development. Features may be changed, reworked, temporarily disabled or replaced in future updates.
 
-- Gas turbine engine
-- Gear shifting system
-- APS - Active Protection System
-- EO countermeasure system
-- Autoloader / loading mechanism / loading belt
-- ATGMs
-- Unguided rockets
-- New ammunition types:
-  - HE
-  - HEAT
-  - APFSDS / long-rod penetrators
-  - Sub-caliber rounds
-- New fire and explosion effects
-- New sounds
+> [!WARNING]
+> **Game crashes while loading the main menu?**
+>
+> Install `SprocketInteropFix.dll` into:
+>
+> ```text
+> Sprocket/BepInEx/patchers
+> ```
+
+---
+
+## Features
+
+### Combat Systems
+
+- **APS - Active Protection System**
+- **EO countermeasure system**
+- **ATGMs**
+- **Unguided rockets**
+- **Autoloaders**
+- Loading mechanisms
+- Loading belts / ammunition feed systems
+- Smoke deployment
+- Fire suppression
+- Additional combat-related mechanics
+
+### Ammunition
+
+Modern Day Mod expands Sprocket with additional modern ammunition types and projectile concepts.
+
+- **HE** - High Explosive
+- **HEAT** - High Explosive Anti-Tank
+- **APFSDS** - Armor-Piercing Fin-Stabilized Discarding Sabot
+- Long-rod penetrators
+- Sub-caliber ammunition
+
+### Powertrain & Vehicle Systems
+
+- **Gas turbine engines**
+- **Gear shifting system**
+- Additional drivetrain behavior
 - New materials
+- Various vehicle-system improvements
+
+### Effects & Audio
+
+- New fire effects
+- New explosion effects
+- New sounds
+- Improved combat feedback
+- Additional visual effects
+
+### Interface & Quality of Life
+
 - Redesigned main menu
-- Various smaller improvements and tweaks
-- And much more
+- In-game mod manager
+- Various gameplay improvements
+- Quality-of-life tweaks
 
-Temporarily Disabled
+---
 
-Some features are currently being reworked and have been temporarily removed:
+## Temporarily Disabled
 
-- Thermal vision
-- Gun stabilizer
+Some systems are currently being reworked.
 
-They may return in future updates in an improved form.
+| Feature | Status |
+|---|---|
+| Thermal Vision | Being reworked |
+| Gun Stabilizer | Being reworked |
 
-<img width="602,5" height="653" alt="photo_2026-10-27_21-32-04" src="https://github.com/user-attachments/assets/38312c41-0d80-407f-acee-629da19647ce" />
+These features may return in future updates in an improved form.
 
-Installation
+---
 
-Modern Day Mod requires BepInEx.
+## Screenshots
 
-Download BepInEx
+<p align="center">
+  <img width="90%" alt="Modern Day Mod screenshot 1" src="https://github.com/user-attachments/assets/41a72378-ae8a-4b35-bb2d-f9bdf45f744d" />
+</p>
 
-Use this specific BepInEx build:
+<p align="center">
+  <img width="90%" alt="Modern Day Mod screenshot 2" src="https://github.com/user-attachments/assets/a097e2bb-b1e5-4ed6-85da-169121b7ef91" />
+</p>
 
-BepInEx Unity IL2CPP x64
+<p align="center">
+  <img width="90%" alt="Modern Day Mod screenshot 3" src="https://github.com/user-attachments/assets/a1f0b965-46a9-4f8b-a315-db9e3a79fcf5" />
+</p>
+
+---
+
+## Installation
+
+### Requirements
+
+Modern Day Mod requires **BepInEx Unity IL2CPP x64**.
+
+Recommended build:
+
+**BepInEx 6.0.0-be.788**
 
 https://builds.bepinex.dev/projects/bepinex_be/788/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.788%2B5b766a3.zip
 
-It is recommended to use this exact build, as the mod is designed to work with it.
+> [!NOTE]
+> Using this exact BepInEx build is recommended because the mod is developed and tested around it.
 
-Installing BepInEx
+### 1. Install BepInEx
 
-1. Download BepInEx using the link above.
-
-2. Open the Sprocket installation folder through Steam:
-
-Sprocket → Properties → Installed Files → Browse
-
-3. Open the downloaded BepInEx archive and extract all files from the archive into the root Sprocket folder.
-
-The BepInEx files must be placed directly in the main game folder.
-
-4. Launch Sprocket and wait until you reach the main menu.
-
-On the first launch, BepInEx will automatically generate the required folders and files.
-
+1. Download the BepInEx build linked above.
+2. Open the Sprocket installation directory through Steam:
+   **Sprocket -> Properties -> Installed Files -> Browse**
+3. Extract all files from the BepInEx archive directly into the root Sprocket folder.
+4. Launch Sprocket and wait until the main menu appears.
 5. Close the game.
 
-Installing Modern Day Mod
+On first launch, BepInEx automatically creates the required folders and files.
 
-Place the mod files into:
+### 2. Install Modern Day Mod
 
-"Sprocket/BepInEx/plugins"
+Place the Modern Day Mod files inside:
 
-Then launch the game.
+```text
+Sprocket/BepInEx/plugins
+```
 
-If everything is installed correctly, Modern Day Mod should load automatically with BepInEx.
+Then launch Sprocket normally.
 
-If the Mod Does Not Work
+If everything is installed correctly, Modern Day Mod should load automatically through BepInEx.
+
+---
+
+## Controls
+
+| Key | Action |
+|---|---|
+| `F11` | Open Mod Manager |
+| `G` | Smoke |
+| `R` | Reload |
+| `E` | Up |
+| `Q` | Down |
+| `H` | TDA |
+| `6` | Fire Suppression |
+
+> Controls and their behavior may change as development continues.
+
+---
+
+## Compatibility
+
+> [!CAUTION]
+> **Modern Day Mod is currently incompatible with the Cold War mod.**
+
+Using both mods at the same time may cause errors, broken functionality or crashes.
+
+Compatibility with other mods is not guaranteed. When reporting a bug, always mention any additional mods you have installed.
+
+---
+
+## Troubleshooting
 
 Before reporting a problem, make sure that:
 
 - BepInEx is installed correctly
-- You are using the BepInEx version linked above
-- You launched the game at least once after installing BepInEx
-- The mod files are located in "BepInEx/plugins"
-- There are no leftover files from an older version of the mod
-- Your current version of Sprocket is compatible with the mod
+- You are using the recommended BepInEx build
+- Sprocket has been launched at least once after installing BepInEx
+- Modern Day Mod files are located inside `BepInEx/plugins`
+- Old files from previous Modern Day Mod versions have been removed
+- Your current Sprocket version is compatible with the mod
+- Conflicting mods are disabled
 
-If problems appear after updating the mod, it is recommended to completely remove the old version before installing the new one.
+If the game crashes while loading the main menu, install:
 
-Hotbars:
-F11 - mod manager
-G - Smoke
-R - Reload
-E - up key
-Q - down key
-H - TDA
-6 - Fire supression
+```text
+SprocketInteropFix.dll
+```
 
-Found a Bug?
+into:
 
-If you encounter a bug in Modern Day Mod, report it in modding discussion in offical discord of sprocket and tag:
+```text
+Sprocket/BepInEx/patchers
+```
 
-@TMNDas1
+### Problems after updating?
 
-How to Report a Bug
+Completely remove the previous version of Modern Day Mod before installing the new version.
 
-Please include as much information as possible:
-
-- A detailed description of the bug
-- What you were doing before the bug occurred
-- Whether the bug can be reproduced
-- Whether you are using any other mods
-- If so, list the other mods you are using
-- Attach logs from the BepInEx console
-- If possible, attach a screenshot or video showing the issue
-
-Reports such as "it doesn't work" without any description or logs make it much harder to identify and fix the problem.
-
-The more detailed the report is, the easier it will be to reproduce and fix the issue.
+Old DLLs or other leftover files can cause unexpected behavior.
 
 ---
-The "Modern Day" mod is temporarily incompatible with the "Cold War" mod.
 
-Modern Day Mod is still actively being developed.
+## Bug Reports
 
-New systems, weapons, effects, mechanics, and other features will be added in future updates.
-<img width="960" height="540" alt="photo_2026-10-26_21-28-12" src="https://github.com/user-attachments/assets/41a72378-ae8a-4b35-bb2d-f9bdf45f744d" />
-<img width="960" height="540" alt="photo_2026-10-26_21-28-10" src="https://github.com/user-attachments/assets/a097e2bb-b1e5-4ed6-85da-169121b7ef91" />
-<img width="960" height="540" alt="photo_2026-10-26_21-28-11" src="https://github.com/user-attachments/assets/a1f0b965-46a9-4f8b-a315-db9e3a79fcf5" />
+Found a bug?
+
+Report it in the **modding discussion section of the official Sprocket Discord** and tag:
+
+**@TMNDas1**
+
+A useful bug report should include:
+
+- A clear description of the problem
+- What you were doing when it happened
+- Steps to reproduce the bug
+- Whether the issue happens consistently
+- Your Sprocket version
+- Any other installed mods
+- BepInEx console logs
+- Screenshots or video if possible
+
+Reports such as *"it doesn't work"* without logs or additional information are extremely difficult to investigate.
+
+The more information you provide, the easier it is to reproduce and fix the issue.
+
+---
+
+## Development
+
+Modern Day Mod is still actively developed.
+
+Future updates may include:
+
+- New weapons
+- New ammunition
+- New vehicle systems
+- Improvements to existing mechanics
+- Expanded modern combat systems
+- Additional effects and sounds
+- Reworked features
+- More quality-of-life improvements
+
+<p align="center">
+  <img width="520" alt="Modern Day Mod" src="https://github.com/user-attachments/assets/38312c41-0d80-407f-acee-629da19647ce" />
+</p>
+
+<p align="center">
+  <b>Modern Day Mod</b><br>
+  Expanding Sprocket into modern armored warfare.
+</p>
