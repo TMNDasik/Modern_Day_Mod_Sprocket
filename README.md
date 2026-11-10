@@ -1,4 +1,11 @@
 <p align="center">
+  🌐 <b>Language / Язык</b><br>
+  <a href="./README.md">🇬🇧 English</a> | <a href="./README_RU.md">🇷🇺 Русский</a>
+</p>
+
+---
+
+<p align="center">
   <img width="100%" alt="Modern Day Mod banner" src="https://github.com/user-attachments/assets/15f5133e-c0b9-4a82-b09f-0fc32b96eca7" />
 </p>
 
@@ -12,6 +19,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Game-Sprocket-2f3136" alt="Sprocket">
   <img src="https://img.shields.io/badge/Loader-BepInEx-5b5bd6" alt="BepInEx">
+  <img src="https://img.shields.io/badge/Update-1.1-blue" alt="Update 1.1">
   <img src="https://img.shields.io/badge/Status-Active%20Development-orange" alt="Active Development">
 </p>
 
@@ -39,6 +47,21 @@ The goal is to give builders more freedom when creating modern armored vehicles 
 
 ---
 
+## What's New in Update 1.1
+
+**Update 1.1** brings back two highly requested systems and adds new options for vehicle design, aiming and combat effects.
+
+- **Gun stabilizer returns** - stabilization is available again.
+- **Thermal vision returns, improved** - the thermal imaging system is back with improvements.
+- **Wheels added** - new possibilities for wheeled vehicle builds.
+- **Hydraulic suspension added** - another suspension system for vehicle designs.
+- **Cartridge case ejection added** - autocannons and machine guns can now eject spent casings.
+- **Panoramic sight added** - a new sighting option for modern vehicles.
+- **Bug fixes** - various issues have been addressed.
+- **And more** - additional improvements and refinements throughout the mod.
+
+---
+
 ## Features
 
 ### Combat Systems
@@ -54,6 +77,12 @@ The goal is to give builders more freedom when creating modern armored vehicles 
 - Fire suppression
 - Additional combat-related mechanics
 
+### Sights & Fire Control
+
+- **Gun stabilizer** - restored in Update 1.1
+- **Improved thermal vision** - restored in Update 1.1
+- **Panoramic sight** - added in Update 1.1
+
 ### Ammunition
 
 Modern Day Mod expands Sprocket with additional modern ammunition types and projectile concepts.
@@ -68,12 +97,15 @@ Modern Day Mod expands Sprocket with additional modern ammunition types and proj
 
 - **Gas turbine engines**
 - **Gear shifting system**
+- **Wheels** - added in Update 1.1
+- **Hydraulic suspension** - added in Update 1.1
 - Additional drivetrain behavior
 - New materials
 - Various vehicle-system improvements
 
 ### Effects & Audio
 
+- **Cartridge case ejection for autocannons and machine guns** - added in Update 1.1
 - New fire effects
 - New explosion effects
 - New sounds
@@ -84,21 +116,9 @@ Modern Day Mod expands Sprocket with additional modern ammunition types and proj
 
 - Redesigned main menu
 - In-game mod manager
+- Bug fixes and stability improvements
 - Various gameplay improvements
 - Quality-of-life tweaks
-
----
-
-## Temporarily Disabled
-
-Some systems are currently being reworked.
-
-| Feature | Status |
-|---|---|
-| Thermal Vision | Being reworked |
-| Gun Stabilizer | Being reworked |
-
-These features may return in future updates in an improved form.
 
 ---
 
