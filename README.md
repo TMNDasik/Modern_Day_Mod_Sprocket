@@ -25,6 +25,8 @@
 
 ---
 
+!!**Guys**, when you report any issues with our **Modern Day Mod** in the Discord chat, please attach the **LogOutput.log** file from the **Sprocket\BepInEx** folder so we can identify the exact cause of the problem and fix it!!
+
 ## About
 
 **Modern Day Mod** is a large-scale gameplay expansion for **Sprocket** focused on modern armored warfare.
