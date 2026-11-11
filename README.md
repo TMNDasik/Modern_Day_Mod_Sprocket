@@ -27,6 +27,16 @@
 
 !!**Guys**, when you report any issues with our **Modern Day Mod** in the Discord chat, please attach the **LogOutput.log** file from the **Sprocket\BepInEx** folder so we can identify the exact cause of the problem and fix it!!
 
+The Wheels mod is currently in an experimental state. You may experience FPS drops on maps with a large number of wheeled vehicles.
+
+If you notice significant FPS drops, try disabling tire physics. This might help, but we can't guarantee it.
+
+There may also be bugs related to the wheels. We're working on improving the mod and bringing it to a fully playable state.
+
+If you encounter any issues with our mods, please always attach the LogOutput.log file from Sprocket\BepInEx so we can identify and fix the problem.
+
+---
+
 ## About
 
 **Modern Day Mod** is a large-scale gameplay expansion for **Sprocket** focused on modern armored warfare.
